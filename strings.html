@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is for week three of CSC102
+    We will make an input validation form and a pallidrome checker
+    Brian Wimmer
+    bwimmer84895@uat.edu
+    23Oct2023
+
+    30 Oct 2023
+    Setting up page to play audio clip of the International Space Station-->
+
+    
+
+
+<head>
+    <!--Link to Javascript file to enable functions-->
+    <script src="stringCode.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="stringsStyle.css">
+</head>
+
+<!--header will contain the navigation title and hyperlinks-->
+<header>
+    <nav>
+        <h3>Navigation:</h3><br>
+        <ul class="navLinks">
+            <!--references to all four html files-->
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./boards.html">Boards</a></li>
+            <li><a href="./games.html">Game</a></li>
+            <li><a href="./strings.html">Strings</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!--Title of page visible to user-->
+    <h1>Welcome to My Strings.html Page</h1>
+    <!--Title of first section-->
+    <h2>Input Validation Section</h2>
+    <div>
+        <!--Login status with specific styling for location on form-->
+        <div id="loginStatus" style="border: none; background-color: transparent; padding-top: 1%;">
+            <!--User instructions-->
+            <br>Press "Submit" to login<br>
+        </div>
+        <p>Please submit the following data for validation</p>
+        <!--returns false by default. Must submit valid data for a true return-->
+        <form id="creditSubmit" onsubmit="return false">
+            First Name: <input type="text" id="fName"><br>
+            Last Name: <input type="text" id="lName"><br>
+            Zip Code: <input type="text" id="zipCode"><br>
+            <br>
+            <!--Submit button that runs the checkCreds script from the stringCode.js file-->
+            <input type="Submit" style="border-radius: 10px;" onclick=" checkCreds();">
+        </form>
+        <br>
+        <br>
+    </div>
+    <br>
+    <h2>Play Audio</h2>
+    <div style="padding: 15px">
+
+        <!--Section to play audio clip-->
+        <button onclick="playStation();" style="border-radius: 10px;">Press to hear the International Space Station</button>
+    </div>
+    <h2>Palindrome Checker</h2>
+    <div>
+        <!--Login status with specific styling for location on form-->
+        <div id="palinStatus" style="border: none; background-color: transparent; padding-top: 1%;font-size: larger;">
+            <br>Palindrone Status<br>
+            <br>
+        </div>
+        <!--returns false by default. Must submit valid data for a true return-->
+        <form id="palinSubmit" onsubmit="return false"></form>
+        <br>
+        <!--User instructions-->
+        <lable>Enter possible palindrome:</lable><input type="text" id="palinInput"><br>
+        <br>
+        <!--Submit button that runs the checkPalin script from the stringCode.js file-->
+        <input type="Submit" style="border-radius: 10px;" onclick ="checkPalin();">
+        <br>
+        <br>
+    </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <!--Contact information-->
+    <footer style="margin-right: 5px;">University of Advancing Technology<br>
+        2625 W, Baseline Road<br>
+        Temp, AZ 85283-1056<br>
+        Brian Wimmer <br>
+        602-383-8228<br>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<!--This is for week One of CSC102
+   Create a meme and customize it with a CSS file
+    Brian Wimmer
+    bwimmer84895@uat.edu
+
+    11/5/2023
+    Assignment 4.1, event driven programming
+    add start and stop buttons to control memeImage marquee-->
+
+<!--06Nov23
+    adding table and confiming header and footer-->
+
+
+
+<head>
+    <script src="code.js"></script>
+    <title>Brian Wimmer Foundation Assignment</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <header>
+        <h3 style="border: none; border-color: transparent;">Navigation:</h3><br>
+        <nav>
+            <ul class="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./boards.html">Boards</a></li>
+                <li><a href="./games.html">Game</a></li>
+                <li><a href="./strings.html">Strings</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1>Foundation Assignment</h1>
+    <h2>This page is the result of what I have learned in CSC102, Introduction to Programming, at the University of Advancing Technology.</h2>
+    <!--marquee to allow movement of image-->
+    <marquee id="myMarquee" direction="up" class="marq" height="600px">
+        <center><img id="memeImage" src="Back to School.jpg" style="width:50%;"></center>
+    </marquee>
+</body>
+<br>
+<br>
+<br>
+<!--For event driven programming, assignment 4.1-->
+<button onclick="startFun();" id="startButton" style="border-radius: 10px;">Start</button><button id="stopButton"
+    onclick="stopFun();" style="border-radius: 10px;">Stop</button>
+<br>
+<br>
+<br>
+<!--rgb(71, 28, 28);-->
+<style>
+    table {
+        width: 100%;
+        border: solid;
+        border-radius: 20px;
+        padding: 5px;
+
+    }
+
+    th {
+        border: solid;
+        border-radius: 20px;
+        font-size: medium;
+        padding: 5px;
+        text-transform: uppercase ;
+        background-color: rgba(71, 28, 28);
+    
+    }
+    td {
+        border: 3px solid white;
+        border-radius: 20px;
+        padding: 5px;
+
+    }
+</style>
+<h1>My Top Three Favorite Helicopters</h1>
+<table>
+    <tr>
+        <!--Headers of the table to intrduce my favorite helicopters-->
+        <th style="width: 25%;">Rank</th>
+        <th style="width: 25%;">Manufacturer</th>
+        <th style="width: 25%;">Model</th>
+        <th style="width: 25%;">First Flight</th>
+    </tr>
+    <tr>
+        <!--This is my number one pick-->
+        <td>1</td>
+        <td>Sikorsky</td>
+        <td>UH-60 Blackhawk</td>
+        <td>1974</td>
+    </tr>
+    <tr>
+        <!--This is my number two pick-->
+        <td>2</td>
+        <td>Bell</td>
+        <td>UH-1 Iroquois</td>
+        <td>1956</td>
+    </tr>
+    <tr>
+        <!--This is my number three pick-->
+        <td>3</td>
+        <td>Bell</td>
+        <td>407</td>
+        <td>1994</td>
+    </tr>
+</table>
+<br>
+<br>
+<footer style="margin-right: 5px;">University of Advancing Technology<br>
+    2625 W, Baseline Road<br>
+    Temp, AZ 85283-1056<br>
+    Brian Wimmer <br>
+    602-383-8228<br>
+
+</footer>
+
+</html>
